@@ -1,1 +1,1 @@
-This is my own vim plugin, include nerdtree and tagbar.
+This is my own vim config file, including nerdtree and tagbar.
