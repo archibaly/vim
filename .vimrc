@@ -43,6 +43,8 @@ nmap <F8> : TagbarToggle<CR>
 set laststatus=2
 set guifont=PowerlineSymbols\ for\ Powerline
 let g:Powerline_symbols='fancy'
+let g:Powerline_mode_V='VLINE'
+let g:Powerline_mode_cv='VBLOCK'
 
 " shortcut
 map <C-j> <C-W>j
