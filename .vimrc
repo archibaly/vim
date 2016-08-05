@@ -39,6 +39,11 @@ let g:tagbar_autofocus=1
 nmap <F8> : TagbarToggle<CR>
 "autocmd FileType c,cpp nested :TagbarOpen
 
+" powerline
+set laststatus=2
+set guifont=PowerlineSymbols\ for\ Powerline
+let g:Powerline_symbols='fancy'
+
 " shortcut
 map <C-j> <C-W>j
 map <C-k> <C-W>k
