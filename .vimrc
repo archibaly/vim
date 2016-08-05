@@ -27,7 +27,6 @@ let NERDTreeMinimalUI=1
 let NERDTreeHighlightCursorline=0
 let NERDTreeDirArrows=0
 nmap <F7> : NERDTreeToggle<CR>
-"autocmd FileType c,cpp nested :NERDTreeToggle
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " tagbar
@@ -37,7 +36,6 @@ let g:tagbar_sort=0
 let g:tagbar_indent=1
 let g:tagbar_autofocus=1
 nmap <F8> : TagbarToggle<CR>
-"autocmd FileType c,cpp nested :TagbarOpen
 
 " powerline
 set laststatus=2
@@ -45,6 +43,8 @@ set guifont=PowerlineSymbols\ for\ Powerline
 let g:Powerline_symbols='fancy'
 let g:Powerline_mode_V='VLINE'
 let g:Powerline_mode_cv='VBLOCK'
+let g:Powerline_mode_S='SLINE'
+let g:Powerline_mode_cs='SBLOCK'
 
 " shortcut
 map <C-j> <C-W>j
