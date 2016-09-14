@@ -46,6 +46,9 @@ let g:Powerline_mode_cv='VBLOCK'
 let g:Powerline_mode_S='SLINE'
 let g:Powerline_mode_cs='SBLOCK'
 
+" nerdcommentor
+let NERDSpaceDelims=1
+
 " shortcut
 map <C-j> <C-W>j
 map <C-k> <C-W>k
