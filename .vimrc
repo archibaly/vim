@@ -52,9 +52,10 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-nmap cl <Esc>: shell<CR>
-nmap gh <ESC>: A<CR>
-nmap ct <ESC>: !ctags -R<CR>
+nmap <F9> : shell<CR>
+nmap <F4> : A<CR>
+nmap <F5> : FixWhitespace<CR>
+nmap <F6> : !ctags -R<CR>
 
 highlight Comment ctermfg=green guifg=green
 highlight Directory ctermfg=LightBlue guifg=LightBlue
