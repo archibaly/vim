@@ -1,5 +1,5 @@
 " basic
-set nocompatible
+set number
 set numberwidth=1
 set cindent
 set autoindent
@@ -14,7 +14,7 @@ set incsearch
 set fileencodings=utf-8,gbk
 syntax on
 filetype on
-autocmd FileType c,cpp nested :set number
+filetype plugin indent on
 
 " pathogen
 execute pathogen#infect()
@@ -47,18 +47,13 @@ let g:Powerline_mode_S='SLINE'
 let g:Powerline_mode_cs='SBLOCK'
 
 " nerdcommentor
-let NERDSpaceDelims=1
-
-" shortcut
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+let NERDSpaceDelims = 1
 
 nmap <F9> : shell<CR>
 nmap <F4> : A<CR>
 nmap <F5> : FixWhitespace<CR>
 nmap <F6> : !ctags -R<CR>
+nmap K : Man 2 <cword> <CR>
 
 highlight Comment ctermfg=green guifg=green
 highlight Directory ctermfg=LightBlue guifg=LightBlue
