@@ -36,7 +36,6 @@ let g:Powerline_symbols='fancy'
 " Nerdcommentor
 let NERDSpaceDelims = 1
 
-nmap <F3> : Autoformat<CR>
 nmap <F4> : A<CR>
 nmap <F5> : FixWhitespace<CR>
 nmap <F6> : !ctags -R<CR>
