@@ -36,11 +36,20 @@ let g:Powerline_symbols='fancy'
 " Nerdcommentor
 let NERDSpaceDelims = 1
 
-nmap <F9> : shell<CR>
+nmap <F3> : Autoformat<CR>
 nmap <F4> : A<CR>
 nmap <F5> : FixWhitespace<CR>
 nmap <F6> : !ctags -R<CR>
+nmap <F9> : shell<CR>
 nmap K : Man 2 <cword> <CR>
+
+" neocomplete
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 highlight Comment ctermfg=green guifg=green
 highlight Directory ctermfg=LightBlue guifg=LightBlue
